@@ -1,0 +1,126 @@
+
+#body {
+    background-image: url(back.jpg);
+    background-position: center;
+}
+
+#middle-white{
+  
+    width: 1000px;
+    height: 488px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 10px 10px 50px  rgba(0, 10, 500, 0.3);
+    overflow: hidden;
+}
+#player-1-panel,
+#player-0-panel{
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+#player0,
+#player1
+{
+    text-align: center;
+    width: 50%;
+    top: -21px;
+    font-family: lato;
+    font-size: 40px;
+    position: relative;
+    left: 0%;
+    height: 93px;
+    padding: 100px;
+}
+.active{
+    background-color: coral;
+}
+.winner{
+font-family: cursive;
+font-size: 58px;
+font-weight:700;
+color: whitesmoke;
+animation: blinkingText 0.9s infinite;
+    
+}
+@keyframes blinkingText{
+    0%{     color: whitesmoke;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+ 
+#tot-score-0,
+#tot-score-1{
+    font-family: lato;
+    text-align: center;
+    font-size: 53px;
+    position: relative;
+    top: -23%;
+    left: 171px;
+    width: 95px;
+    height: 75px;
+}
+#hold{position: relative;
+    top: -5%;
+    left: 38%;
+}
+#Roll {
+    border-bottom-left-radius: 1px;
+    position: relative;
+    top: -27%;
+    left: 46%;
+    height: 28px;
+    color: red;
+    border-radius: 10px;
+    border-color: sandybrown;
+}
+
+#hold {
+    position: relative;
+    top: -14%;
+    height: 32px;
+    left: 38%;
+    border-radius: 8px;
+    width: 65px;
+}
+img.dice {
+    position: absolute;
+    transform: translateX(-50%);
+    height: 96px;
+    top: 30%;
+    left: 45%;
+    box-shadow:  0px 10px 60px rgba(0, 0, 0, 0.10);
+}
+#score-box {
+    background-color: crimson;
+    position: relative;
+    text-align: center;
+    height: 86px;
+    width: 120px;
+    left: 34%;
+}
+#cur-score {
+    
+    text-align: center;
+    font-family: gugi;
+    font-size: 30px;
+    position: relative;
+    width: 118px;
+    left: 0px;
+    color: yellow;
+}
+#cur-score-number {
+    position: relative;
+    font-family: lato;
+    top: -4px;
+    font-size: 30px;
+    left: 33%;
+    color: white;
+    width: 0px;
+}
